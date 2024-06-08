@@ -14,7 +14,9 @@ ECG data necessitates consideration of only the temporal dimension. Therefore, w
 
 $u=|I_p\cup I_{gt}|$ (green) is the length of the union of two intervals $I_p$ (blue) and $I_{gt}$ (red). ${d = \rho(c, c_{gt})}$ (purple) is the distance of central points $c$ and $c_{gt}$ of two intervals.
 
-$$\mathcal{L}_{diou}=1-\Big(\frac{|I_p\cap I_{gt}|}{|I_p\cup I_{gt}|} - \frac{\rho^2 (c, c_{gt})}{|I_p\cup I_{gt}|+\delta}\Big)$$
+```math
+\mathcal{L}_{diou}=1-\Big(\frac{|I_p\cap I_{gt}|}{|I_p\cup I_{gt}|} - \frac{\rho^2 (c, c_{gt})}{|I_p\cup I_{gt}|+\delta}\Big)
+```
 
 where, $\rho(·)$ is denoted to the Euclidean distance and $\delta$ is a small value to avoid dividing by zero.
 
