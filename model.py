@@ -6,7 +6,7 @@ warnings.filterwarnings(action="ignore")
 
 
 class Yolov1(nn.Module):
-    def __init__(self, in_channels, out_channels, S = 7, B = 2, C = 1, init_weights=True, device=None, activation='leakyrelu'):
+    def __init__(self, in_channels, out_channels, S = 9, B = 2, C = 1, init_weights=True, device=None, activation='leakyrelu'):
         super(Yolov1, self).__init__()
 
         if activation == 'leakyrelu':
