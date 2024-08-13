@@ -24,7 +24,7 @@ where, $\rho(·)$ is denoted to the Euclidean distance and $\delta$ is a small v
 ## Datasets
 - Long Term AF Database (LTAFDB) [5] : 84 recordings from 84 patients, 128 Hz, 24-25 hours per recording.
   https://physionet.org/content/ltafdb/1.0.0/
-- MIT-BIH Atrial Fibrillation Database (AFDB) [6] : 23 recordings from 23 patients, 256 Hz, 10 hours per recording.
+- MIT-BIH Atrial Fibrillation Database (AFDB) [6] : 23 recordings from 23 patients, 250 Hz, 10 hours per recording.
   https://physionet.org/content/afdb/1.0.0/
 - The 4th China Physiological Signal Challenge 2021 (CPSC2021) [7] : 1,436 recordings from 105 patients, 200 Hz, 20 minutes per recording.
   https://physionet.org/content/cpsc2021/1.0.0/
