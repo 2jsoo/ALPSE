@@ -1,13 +1,11 @@
 ## Import Library
 from import_library import *
-from utils import *
-import warnings
-warnings.filterwarnings(action="ignore")
+from utils.utils import *
 
 
-class YoloLoss(nn.Module):
+class ALPSELoss(nn.Module):
     def __init__(self, S = 9, B = 2, C = 1, lambda_class=0, lambda_noobj=0.5, lambda_obj=1, lambda_iou=1, iou_type='diou', reduction='sum'):
-        super(YoloLoss, self).__init__()
+        super(ALPSELoss, self).__init__()
         self.S = S
         self.B = B
         self.C = C    

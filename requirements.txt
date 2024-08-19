@@ -1,0 +1,10 @@
+matplotlib==3.5.1
+neurokit2==0.2.9
+numpy==1.22.3
+pandas==1.4.1
+ray==2.10.0
+scikit-learn==1.0.2
+scipy==1.8.0
+torch==1.12.0.dev20220327+cu113
+tqdm==4.63.1
+wfdb==4.1.2
