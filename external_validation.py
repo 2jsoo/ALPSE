@@ -23,8 +23,8 @@ gpu = config['Base']['gpu']
 seed = int(config['Base']['seed'])
 
 
-train_db = config['Data']['train_db'] # afdb
-test_db = config['Data']['test_db'] # cpsc2021
+train_db = config['Data']['train_db'] # cpsc2021
+test_db = config['Data']['test_db'] # ltafdb
 fs = int(config['Data']['fs'])
 seg_length = float(config['Data']['seg_length'])
 
