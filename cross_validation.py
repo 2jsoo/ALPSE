@@ -22,7 +22,7 @@ save_path = config['Base']['save_path']
 gpu = config['Base']['gpu']
 seed = int(config['Base']['seed'])
 
-train_db = config['Data']['train_db'] # afdb
+train_db = config['Data']['train_db']
 fs = int(config['Data']['fs'])
 seg_length = float(config['Data']['seg_length'])
 
