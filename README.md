@@ -22,16 +22,16 @@ where, $\rho(·)$ is denoted to the Euclidean distance and $\delta$ is a small v
 
 ## Requirements
 To install requirements:
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 ## Datasets
 To process dataset:
-'''
+```
 1. python dataset_preprocessing.py 'configs/preprocessing.yaml'
 2. python data_preprocessing.py 'configs/preprocessing.yaml'
-'''
+```
 
 - Long Term AF Database (LTAFDB) [5] : 84 recordings from 84 patients, 128 Hz, 24-25 hours per recording.
   https://physionet.org/content/ltafdb/1.0.0/
@@ -46,12 +46,12 @@ To process dataset:
 
 ## Training and Evaluation
 Hyperparameters are defined in the configure file.
-''' 
+```
 # cross-validation
 python cross_validation.py 'configs/cross_validation.yaml'
 # external-validation
 python external_validation.py 'configs/external_validation.yaml'
-''' 
+```
 
 ## Prediction
 Examples of prediction in LTAFDB trained with AFDB (top) and trained with CPSC2021 (bottom), respectively. ECG in the blue area is the actual AF/AFL and the blue box with the confidence value is the  AF/AFL predicted by the proposed model.
