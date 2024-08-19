@@ -38,7 +38,7 @@ where, $\rho(·)$ is denoted to the Euclidean distance and $\delta$ is a small v
 Examples of prediction in LTAFDB trained with AFDB (top) and trained with CPSC2021 (bottom), respectively. ECG in the blue area is the actual AF/AFL and the blue box with the confidence value is the  AF/AFL predicted by the proposed model.
 
 <p align="center">
-    <img src="Figures/predict_example.png" width="1000">
+    <img src="Figures/predictions" width="1000">
 </p>    
 
 
