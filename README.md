@@ -25,6 +25,7 @@ To install requirements:
 ```
 pip install -r requirements.txt
 ```
+All experiments were run in Python 3.8.10.
 
 ## Datasets
 To process dataset:
