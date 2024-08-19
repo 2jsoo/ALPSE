@@ -29,8 +29,10 @@ pip install -r requirements.txt
 ## Datasets
 To process dataset:
 ```
-1. python dataset_preprocessing.py 'configs/preprocessing.yaml'
-2. python data_preprocessing.py 'configs/preprocessing.yaml'
+# 1.
+python dataset_preprocessing.py 'configs/preprocessing.yaml'
+# 2.
+python data_preprocessing.py 'configs/preprocessing.yaml'
 ```
 
 - Long Term AF Database (LTAFDB) [5] : 84 recordings from 84 patients, 128 Hz, 24-25 hours per recording.
@@ -45,11 +47,11 @@ To process dataset:
   https://physionet.org/content/nsrdb/1.0.0/
 
 ## Training and Evaluation
-Hyperparameters are defined in the configure file.
+Hyperparameters are defined in the configure files.
 ```
-# cross-validation
+# 1. cross-validation
 python cross_validation.py 'configs/cross_validation.yaml'
-# external-validation
+# 2. external-validation
 python external_validation.py 'configs/external_validation.yaml'
 ```
 
