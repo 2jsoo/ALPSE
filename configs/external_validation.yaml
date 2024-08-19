@@ -1,0 +1,40 @@
+[Base]
+path: ./final_data
+save_path: ./Result
+gpu: 0
+seed: 44
+
+[Data]
+train_db: cpsc2021
+test_db: ltafdb
+fs: 100
+seg_length: 26.88
+
+[Model]
+S: 9
+B: 2
+C: 1
+out_channels: 256
+activation: leakyrelu
+
+[Loss]
+lambda_class: 0
+lambda_noobj: 0.5
+lambda_obj: 1
+lambda_iou: 1
+iou_type: diou
+reduction: sum
+
+[SYS]
+BATCH: 16
+num_epochs: 100
+optim_name: SGD
+early_stop: 20
+MOMENTUM: 0.9
+iou_threshold: 0.5
+nms_iou_threshold: 0.5
+confidence_threshold: 0.7
+lr_init: 1e-6
+warmup_epochs: 5
+LR: 0.01
+WD: 0.0005

@@ -1,0 +1,14 @@
+[Dataset]
+path: ./datasets
+save_path: ./final_data
+db: ltafdb
+lowcut: 0.5
+highcut: 40
+target_fs: 100
+
+[Data]
+path: ./final_data
+save_path: ./final_data
+db: ltafdb
+fs: 100
+seg_length: 26.88
