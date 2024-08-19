@@ -2,7 +2,7 @@
 from import_library import *
 from utils.utils import *
 
-
+## code reference : https://github.com/aladdinpersson/Machine-Learning-Collection/tree/master/ML/Pytorch/object_detection/YOLO
 class ALPSELoss(nn.Module):
     def __init__(self, S = 9, B = 2, C = 1, lambda_class=0, lambda_noobj=0.5, lambda_obj=1, lambda_iou=1, iou_type='diou', reduction='sum'):
         super(ALPSELoss, self).__init__()
