@@ -20,8 +20,19 @@ $u=|I_p\cup I_{gt}|$ (green) is the length of the union of two intervals $I_p$ (
 
 where, $\rho(·)$ is denoted to the Euclidean distance and $\delta$ is a small value to avoid dividing by zero.
 
+## Requirements
+To install requirements:
+'''
+pip install -r requirements.txt
+'''
 
 ## Datasets
+To process dataset:
+'''
+1. python dataset_preprocessing.py 'configs/preprocessing.yaml'
+2. python data_preprocessing.py 'configs/preprocessing.yaml'
+'''
+
 - Long Term AF Database (LTAFDB) [5] : 84 recordings from 84 patients, 128 Hz, 24-25 hours per recording.
   https://physionet.org/content/ltafdb/1.0.0/
 - MIT-BIH Atrial Fibrillation Database (AFDB) [6] : 23 recordings from 23 patients, 250 Hz, 10 hours per recording.
@@ -33,6 +44,14 @@ where, $\rho(·)$ is denoted to the Euclidean distance and $\delta$ is a small v
 - MIT-BIH Normal Sinus Rhythm Database (NSRDB) [9] : 18 recordings from 18 patients, 128 Hz, over 24 hours per recording.
   https://physionet.org/content/nsrdb/1.0.0/
 
+## Training and Evaluation
+Hyperparameters are defined in the configure file.
+''' 
+# cross-validation
+python cross_validation.py 'configs/cross_validation.yaml'
+# external-validation
+python external_validation.py 'configs/external_validation.yaml'
+''' 
 
 ## Prediction
 Examples of prediction in LTAFDB trained with AFDB (top) and trained with CPSC2021 (bottom), respectively. ECG in the blue area is the actual AF/AFL and the blue box with the confidence value is the  AF/AFL predicted by the proposed model.
